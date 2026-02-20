@@ -7,9 +7,17 @@
  * This java program demonstrates loops, arrays, conditional logic, and basic user interactions.
  */
 
+import java.util.Scanner;
+
 public class GroceryManagementSystem{
 
     // Team Members please add methods 
+
+    public static void main(String[] args) {
+        String[] itemNames = new String[10];
+        double[] itemPrices = new double[10];
+        int[] itemStocks = new int[10];
+    }
 
     /**
  * Search item in array if found restock them 
