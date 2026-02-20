@@ -13,6 +13,12 @@ public class GroceryManagementSystem{
 
     // Team Members please add methods 
 
+    /**
+     * The main method includes the parallel arrays and the user menu
+     * from which the user may choose to view items, restock items, or
+     * exit the program.
+     * @param args
+     */
     public static void main(String[] args) {
         String[] itemNames = new String[10];
         double[] itemPrices = new double[10];
