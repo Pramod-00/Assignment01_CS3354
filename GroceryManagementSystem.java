@@ -73,7 +73,7 @@ public class GroceryManagementSystem {
     * @param target  - used to store name of the item, user wants to restock
     * @param amount  - used to add number of units to the existing stock
     */
-    public static void restock_Item(String[] names, int[] stocks, String target, int amount){
+    public static void restockItem(String[] names, int[] stocks, String target, int amount){
         boolean item_found = false; 
         for(int i = 0; i < names.length; i++){
             if(names[i] != null && names[i].equals(target)){
