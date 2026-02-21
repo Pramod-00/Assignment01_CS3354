@@ -9,9 +9,9 @@
 
 import java.util.Scanner;
 
-public class GroceryManagementSystem{
+public class GroceryManagementSystem {
 
-    /* *
+    /**
     * Prints inventory of store by looping through the parallel arrays
     * @param names Array of item names
     * @param prices Array of item prices
@@ -25,8 +25,6 @@ public class GroceryManagementSystem{
         }
     }
 
-    // Team Members please add methods 
-
     /**
      * The main method includes the parallel arrays and the user menu
      * from which the user may choose to view items, restock items, or
@@ -39,7 +37,7 @@ public class GroceryManagementSystem{
         int[] itemStocks = new int[10];
 
         while (true) {
-            Scanner inout = new Scanner(System.in);
+            Scanner input = new Scanner(System.in);
             
             System.out.println("Enter 1-3 to choose an option:");
             System.out.println("1 for View");
@@ -68,28 +66,26 @@ public class GroceryManagementSystem{
     }
 
     /**
- * Search item in array if found restock them 
- * 
- * @param names   - array used to store grocery item names
- * @param stocks  - array used to store the stock quantity
- * @param target  - used to store name of the item, user wants to restock
- * @param amount  - used to add number of units to the existing stock
- */
-
-
-public static void restock_Item(String[] names, int[] stocks, String target, int amount){
-    boolean item_found = false; 
-    for(int i = 0; i < names.length; i++){
-        if(names[i] != null && names[i].equals(target)){
-            stocks[i] = stocks[i] + amount;
-            System.out.println("Item restocked successfully");
-            item_found = true;
-            break;
+    * Search item in array if found restock them 
+    * 
+    * @param names   - array used to store grocery item names
+    * @param stocks  - array used to store the stock quantity
+    * @param target  - used to store name of the item, user wants to restock
+    * @param amount  - used to add number of units to the existing stock
+    */
+    public static void restock_Item(String[] names, int[] stocks, String target, int amount){
+        boolean item_found = false; 
+        for(int i = 0; i < names.length; i++){
+            if(names[i] != null && names[i].equals(target)){
+                stocks[i] = stocks[i] + amount;
+                System.out.println("Item restocked successfully");
+                item_found = true;
+                break;
+            }
+        }
+        if(!item_found){
+            System.out.println("Item not found");
         }
     }
-    if(!item_found){
-        System.out.println("Item not found");
-    }
-}
 
 }
