@@ -10,7 +10,6 @@
 import java.util.Scanner;
 
 public class GroceryManagementSystem{
-<<<<<<< HEAD
 
     /* *
     * Prints inventory of store by looping through the parallel arrays
@@ -25,9 +24,6 @@ public class GroceryManagementSystem{
             }
         }
     }
-=======
-<<<<<<< HEAD
->>>>>>> 57826049a4d64e46e947e9ebb9d961915f9598e4
 
     // Team Members please add methods 
 
@@ -95,8 +91,7 @@ public static void restock_Item(String[] names, int[] stocks, String target, int
         System.out.println("Item not found");
     }
 }
-<<<<<<< HEAD
-=======
+
     /* *
     * Prints inventory of store by looping through the parallel arrays
     * @param names Array of item names
@@ -110,6 +105,4 @@ public static void restock_Item(String[] names, int[] stocks, String target, int
             }
         }
     }
->>>>>>> main
->>>>>>> 57826049a4d64e46e947e9ebb9d961915f9598e4
 }
