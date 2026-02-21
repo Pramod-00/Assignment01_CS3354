@@ -92,17 +92,4 @@ public static void restock_Item(String[] names, int[] stocks, String target, int
     }
 }
 
-    /* *
-    * Prints inventory of store by looping through the parallel arrays
-    * @param names Array of item names
-    * @param prices Array of item prices
-    * @param stocks Array of stock inventory
-    */
-    public static void printInventory(String[] names, double[] prices, int[] stocks) {
-        for (int i = 0; i < names.length; i++) {
-            if (names[i] != null) {
-                System.out.println("Item: " + names[i] + " Price: $" + prices[i] + " Stock: " + stocks[i]);
-            }
-        }
-    }
 }
