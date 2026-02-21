@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Grocery Management System
  * 
@@ -6,8 +8,6 @@
  * 
  * This java program demonstrates loops, arrays, conditional logic, and basic user interactions.
  */
-
-import java.util.Scanner;
 
 public class GroceryManagementSystem {
 
@@ -29,7 +29,7 @@ public class GroceryManagementSystem {
      * The main method includes the parallel arrays and the user menu
      * from which the user may choose to view items, restock items, or
      * exit the program.
-     * @param args
+     * @param args Command line arguments
      */
     public static void main(String[] args) {
         String[] itemNames = new String[10];
