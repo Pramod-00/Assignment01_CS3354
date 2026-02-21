@@ -36,8 +36,9 @@ public class GroceryManagementSystem {
         double[] itemPrices = new double[10];
         int[] itemStocks = new int[10];
 
+        Scanner input = new Scanner(System.in);
+        
         while (true) {
-            Scanner input = new Scanner(System.in);
             
             System.out.println("Enter 1-3 to choose an option:");
             System.out.println("1 for View");
